@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS ES6</title>
+</head>
+<body ng-strict-di ng-app="myapp" ng-controller="HomeMainController as home">
+	<div ng-repeat="user in home.users">
+		<h1>{{user.name}}</h1>
+	</div>
+	{% for (var chunk in o.htmlWebpackPlugin.files) { %}
+        <script src="{%=o.htmlWebpackPlugin.files[chunk]%}"></script>
+    {% } %}
+</body>
+</html>
